@@ -1,19 +1,22 @@
-# Study No. 2: Galactic Kinematics & The Rotation Anomaly
+# Study No. 2: Kinematic Anomalies in Gaia DR3 Data
 
-## Objective
-This study investigates the "Missing Mass" problem using empirical astrometric data. The goal is to determine if the flattened rotation curves of galaxies can be explained by the scaling laws identified in Study #1, rather than the addition of non-baryonic Dark Matter.
+## 1. Research Objective
+To analyze the galactic rotation anomaly (flattened rotation curves) using empirical stellar data and determine if the effect is an emergent property of vacuum scaling.
 
-## Data Source
-- **Archive:** Gaia Data Release 3 (DR3)
-- **Sample:** 5,000 stars with high-precision parallax and radial velocity measurements.
-- **Tools:** Astroquery (ADQL), NumPy, Matplotlib, Seaborn.
+## 2. Theoretical Framework
+- **Key Hypothesis:** Gravitational coupling deviates from Newtonian $1/\sqrt{r}$ decay according to the scaling law identified in Study #1.
+- **Relationship to Project Synapse:** Tests the macro-scale validity of the universal scaling law without invoking non-baryonic Dark Matter.
 
-## Key Scientific Results
-- **Observed Gradient:** We identified a stellar velocity gradient of approximately 0.0066 km/s/pc.
-- **Deviation:** The data shows a clear departure from the Newtonian $1/\sqrt{r}$ decay, confirming the rotation anomaly in the local quadrant.
-- **Consistency:** Initial synthesis suggests an 88.13% correlation between this anomaly and the Vacuum Scaling Index ($\alpha$) derived in Study #1.
+## 3. Data & Methodology
+- **Source:** Gaia Data Release 3 (DR3).
+- **Processing:** ADQL query of 5,000 local stars, radial velocity reconstruction, and linear regression of the velocity-distance gradient.
+- **Metrics:** Reduced $\chi^2$, Root Mean Square Error (RMSE), Observed Gradient ($\nabla V$).
 
-## Contents
-1. `Study_2_Gaia_Kinematics.html` - Professional Research Manuscript.
-2. `gaia_study_2.png` - Visualized velocity profile.
-3. `Study_02_Gaia_Analysis.ipynb` - Python codebase for data acquisition and processing.
+## 4. Primary Results
+- **Quantitative Finding:** Observed Gradient $\nabla V \approx 0.0066$ km/s/pc.
+- **Statistical Significance:** Reported an 88.13% correlation between observed stellar kinematics and the vacuum scaling prediction.
+
+## 5. Directory Contents
+- `Study_2_Gaia_Kinematics.html` - Formal Research Manuscript.
+- `Study_02_Gaia_Analysis.ipynb` - Python Analysis Notebook.
+- `gaia_study_2.png` - High-Resolution Stellar Velocity Profile.
